@@ -10,6 +10,7 @@ class CreateDogs < ActiveRecord::Migration
     drop_table :dogs
   end
 
+# The change method is actually a shorter way of writing up and down methods.
   def change
     create_table :dogs do |t|
       t.string :name
